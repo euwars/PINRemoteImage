@@ -1,4 +1,5 @@
 PODS:
+  - FLAnimatedImage (1.0.12)
   - libwebp (0.5.0):
     - libwebp/core (= 0.5.0)
     - libwebp/dec (= 0.5.0)
@@ -23,27 +24,33 @@ PODS:
   - libwebp/utils (0.5.0):
     - libwebp/core
   - libwebp/webp (0.5.0)
-  - PINCache (2.2.2)
-  - PINRemoteImage/Core (2.1.2):
-    - PINCache (>= 2.1)
-  - PINRemoteImage/iOS (2.1.2):
+  - PINCache (3.0.0-beta)
+  - PINRemoteImage (3.0.0-beta.2):
+    - PINRemoteImage/FLAnimatedImage (= 3.0.0-beta.2)
+    - PINRemoteImage/PINCache (= 3.0.0-beta.2)
+  - PINRemoteImage/Core (3.0.0-beta.2)
+  - PINRemoteImage/FLAnimatedImage (3.0.0-beta.2):
+    - FLAnimatedImage (>= 1.0)
     - PINRemoteImage/Core
-  - PINRemoteImage/WebP (2.1.2):
+  - PINRemoteImage/PINCache (3.0.0-beta.2):
+    - PINCache (>= 3.0.0-beta)
+    - PINRemoteImage/Core
+  - PINRemoteImage/WebP (3.0.0-beta.2):
     - libwebp
     - PINRemoteImage/Core
 
 DEPENDENCIES:
-  - PINCache
-  - PINRemoteImage/iOS (from `../`)
+  - PINRemoteImage (from `../`)
   - PINRemoteImage/WebP (from `../`)
 
 EXTERNAL SOURCES:
   PINRemoteImage:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   libwebp: 68ba2001ba6806ee52837ebd77a551a0b6567e4e
-  PINCache: 078426d356ab95ef875e9e62e5c35a2ea3333c28
-  PINRemoteImage: 49c514f94a8a51ce871aebba2ea7e5a10598af3b
+  PINCache: 9b66261ade3d4feb272df4b4dd2e035469909448
+  PINRemoteImage: 7c7dd935dcc9f31194fea4628c9e1c531a96ae57
 
 COCOAPODS: 0.39.0

@@ -9,11 +9,13 @@
 #import "PINImage+WebP.h"
 
 #ifdef PIN_WEBP
-#if !COCOAPODS
 #import "webp/decode.h"
+<<<<<<< HEAD
 #else
 #import "webp/decode.h"
 #endif
+=======
+>>>>>>> pinterest/master
 
 static void releaseData(void *info, const void *data, size_t size)
 {
